@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KYC Verification - OnboardPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+
+            <a href="../../index.html">
+                📊 Dashboard
+            </a>
+
+            <a href="client-registration.html">
+                👤 Client Registration
+            </a>
+
+            <a href="kyc-verification.html" class="active">
+                💳 KYC Verification
+            </a>
+
+            <a href="documents.html">
+                📄 Documents
+            </a>
+
+            <a href="#">
+                ⚠️ Risk Assessment
+            </a>
+
+            <a href="#">
+                📋 Policy Recommendation
+            </a>
+
+            <a href="client-listing.html">
+                👥 Client Listing
+            </a>
+
+            <a href="#">
+                📑 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+
+        <!-- Top Bar -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h2>
+                    Client Onboarding Platform
+                </h2>
+
+                <p>
+                    Insurance & Finance
+                </p>
+
+            </div>
+
+
+            <div>
+                🔔 &nbsp; 👤 Admin
+            </div>
+
+        </header>
+
+
+        <!-- Content -->
+
+        <section class="content-area">
+
+            <h1>
+                KYC Verification
+            </h1>
+
+            <p>
+                Verify client identity and KYC information
+            </p>
+
+
+            <!-- KYC Card -->
+
+            <div class="registration-card">
+
+                <h2>
+                    KYC Details
+                </h2>
+
+
+                <!-- Client Name + Status -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Client Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="kycClientName"
+                            placeholder="Enter client name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            KYC Status
+                        </label>
+
+                        <select id="kycStatus">
+
+                            <option value="">
+                                Select Status
+                            </option>
+
+                            <option value="pending">
+                                Pending
+                            </option>
+
+                            <option value="verified">
+                                Verified
+                            </option>
+
+                            <option value="rejected">
+                                Rejected
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Document Type + Number -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Document Type
+                        </label>
+
+                        <select id="kycDocumentType">
+
+                            <option value="">
+                                Select Document
+                            </option>
+
+                            <option value="aadhaar">
+                                Aadhaar Card
+                            </option>
+
+                            <option value="pan">
+                                PAN Card
+                            </option>
+
+                            <option value="passport">
+                                Passport
+                            </option>
+
+                            <option value="driving-license">
+                                Driving License
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Document Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="kycDocumentNumber"
+                            placeholder="Enter document number"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remarks -->
+
+                <div class="full-width">
+
+                    <div class="form-group">
+
+                        <label>
+                            Verification Remarks
+                        </label>
+
+                        <textarea
+                            id="kycRemarks"
+                            rows="4"
+                            placeholder="Enter verification remarks"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+
+                <div class="form-actions">
+
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="location.reload()"
+                    >
+                        Clear
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="submit-btn"
+                        id="kycVerifyBtn"
+                    >
+                        Verify KYC
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

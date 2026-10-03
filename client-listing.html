@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Client Listing - OnboardPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+            <a href="../../index.html">📊 Dashboard</a>
+            <a href="client-registration.html">👤 Client Registration</a>
+<a href="kyc-verification.html">🪪 KYC Verification</a>
+<a href="#">📄 Documents</a>
+            <a href="#">⚠️ Risk Assessment</a>
+            <a href="#">📋 Policy Recommendation</a>
+            <a href="client-listing.html" class="active">👥 Client Listing</a>
+            <a href="reports.html">📑 Reports</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h2>Client Onboarding Platform</h2>
+                <p>Insurance & Finance</p>
+            </div>
+
+            <div>
+                🔔 &nbsp; 👤 Admin
+            </div>
+        </header>
+
+        <section class="content-area">
+
+            <h1>Client Listing</h1>
+            <p>View and manage registered clients</p>
+
+            <div class="registration-card">
+
+                <h2>Registered Clients</h2>
+
+                <div style="overflow-x: auto;">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Client Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>City</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="clientTableBody">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

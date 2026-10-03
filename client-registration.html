@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Client Registration - OnboardPro</title>
+
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+            <a href="../../index.html">📊 Dashboard</a>
+            <a href="client-registration.html" class="active">👤 Client Registration</a>
+            <a href="kyc-verification.html">🪪 KYC Verification</a>
+           <a href="documents.html">📄 Documents</a>
+           <a href="./risk-assessment.html">⚠️ Risk Assessment</a>
+           <a href="./policy-recommendation.html">📋 Policy Recommendation</a>
+           <a href="client-listing.html">👥 Client Listing</a>
+         <a href="./reports.html">📑 Reports</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+        <header class="top-navbar">
+
+            <div>
+                <h2>Client Onboarding Platform</h2>
+                <p>Insurance & Finance</p>
+            </div>
+
+            <div class="user-section">
+                <span>🔔</span>
+                <span>👤 Admin</span>
+            </div>
+
+        </header>
+
+
+        <!-- Registration Content -->
+        <section class="content">
+
+            <h1>Client Registration</h1>
+
+            <p class="welcome-text">
+                Register a new client with personal and contact information.
+            </p>
+
+            <div class="registration-card">
+
+                <h2>Personal Information</h2>
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter first name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter last name">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter phone number">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+
+                            <select id="gender">
+                                <option value="">Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <h2 class="section-title">Contact Information</h2>
+
+                    <div class="form-group full-width">
+
+                        <label for="address">Address</label>
+
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="Enter complete address">
+                        </textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" placeholder="Enter pincode">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button type="reset" class="cancel-btn">
+                            Clear
+                        </button>
+
+                        <button type="submit" class="submit-btn">
+                            Register Client
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+<script src="../js/script.js"></script>
+</body>
+</html>
