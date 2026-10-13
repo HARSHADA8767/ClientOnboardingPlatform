@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Risk Assessment - OnboardPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+
+            <a href="../../index.html">
+                📊 Dashboard
+            </a>
+
+            <a href="client-registration.html">
+                👤 Client Registration
+            </a>
+
+            <a href="kyc-verification.html">
+                💳 KYC Verification
+            </a>
+
+            <a href="documents.html">
+                📄 Documents
+            </a>
+
+            <a href="risk-assessment.html" class="active">
+                ⚠️ Risk Assessment
+            </a>
+
+          <a href="policy-recommendation.html">
+    📋 Policy Recommendation
+</a>
+
+            <a href="client-listing.html">
+                👥 Client Listing
+            </a>
+
+            <a href="#">
+                📑 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+
+        <!-- Top Bar -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h2>
+                    Client Onboarding Platform
+                </h2>
+
+                <p>
+                    Insurance & Finance
+                </p>
+
+            </div>
+
+
+            <div>
+                🔔 &nbsp; 👤 Admin
+            </div>
+
+        </header>
+
+
+        <!-- Content -->
+
+        <section class="content-area">
+
+            <h1>
+                Risk Assessment
+            </h1>
+
+            <p>
+                Assess client risk profile for insurance and finance
+            </p>
+
+
+            <!-- Risk Assessment Card -->
+
+            <div class="registration-card">
+
+                <h2>
+                    Client Risk Details
+                </h2>
+
+
+                <!-- Client Name + Age -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Client Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="riskClientName"
+                            placeholder="Enter client name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="riskAge"
+                            placeholder="Enter age"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Annual Income + Occupation -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Annual Income
+                        </label>
+
+                        <input
+                            type="number"
+                            id="riskIncome"
+                            placeholder="Enter annual income"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Occupation
+                        </label>
+
+                        <select id="riskOccupation">
+
+                            <option value="">
+                                Select Occupation
+                            </option>
+
+                            <option value="Salaried">
+                                Salaried
+                            </option>
+
+                            <option value="Business">
+                                Business
+                            </option>
+
+                            <option value="Self Employed">
+                                Self Employed
+                            </option>
+
+                            <option value="Professional">
+                                Professional
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Health Risk + Financial Risk -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Health Risk
+                        </label>
+
+                        <select id="healthRisk">
+
+                            <option value="">
+                                Select Health Risk
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Financial Risk
+                        </label>
+
+                        <select id="financialRisk">
+
+                            <option value="">
+                                Select Financial Risk
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Risk Remarks -->
+
+                <div class="full-width">
+
+                    <div class="form-group">
+
+                        <label>
+                            Risk Remarks
+                        </label>
+
+                        <textarea
+                            id="riskRemarks"
+                            rows="4"
+                            placeholder="Enter risk assessment remarks"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="location.reload()"
+                    >
+                        Clear
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="submit-btn"
+                        id="riskAssessmentBtn"
+                    >
+                        Assess Risk
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+   <script src="../js/script.js"></script>
+
+</body>
+
+</html>

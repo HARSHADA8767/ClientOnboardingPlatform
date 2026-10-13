@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documents - OnboardPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+            <a href="../../index.html">📊 Dashboard</a>
+            <a href="client-registration.html">👤 Client Registration</a>
+            <a href="kyc-verification.html">💳 KYC Verification</a>
+            <a href="documents.html" class="active">📄 Documents</a>
+            <a href="risk-assessment.html">⚠️ Risk Assessment</a>
+            <a href="#">📋 Policy Recommendation</a>
+            <a href="client-listing.html">👥 Client Listing</a>
+            <a href="#">📑 Reports</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h2>Client Onboarding Platform</h2>
+                <p>Insurance & Finance</p>
+            </div>
+
+            <div>
+                🔔 &nbsp; 👤 Admin
+            </div>
+
+        </header>
+
+        <section class="content-area">
+
+            <h1>Document Collection</h1>
+
+            <p>
+                Upload and manage client documents
+            </p>
+
+            <div class="registration-card">
+
+                <h2>Upload Document</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>Client Name</label>
+
+                        <input
+                            type="text"
+                            id="documentClientName"
+                            placeholder="Enter client name"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Document Type</label>
+
+                        <select id="documentType">
+
+                            <option value="">
+                                Select Document
+                            </option>
+
+                            <option value="Aadhaar Card">
+                                Aadhaar Card
+                            </option>
+
+                            <option value="PAN Card">
+                                PAN Card
+                            </option>
+
+                            <option value="Passport">
+                                Passport
+                            </option>
+
+                            <option value="Driving License">
+                                Driving License
+                            </option>
+
+                            <option value="Income Proof">
+                                Income Proof
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="full-width">
+
+                    <div class="form-group">
+
+                        <label>Select Document</label>
+
+                        <input
+                            type="file"
+                            id="documentFile"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="document.getElementById('documentFile').value = ''"
+                    >
+                        Clear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="submit-btn"
+                        id="uploadDocumentBtn"
+                    >
+                        Upload Document
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

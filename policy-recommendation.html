@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Policy Recommendation - OnboardPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🚀 OnboardPro
+        </div>
+
+        <nav>
+
+            <a href="../../index.html">
+                📊 Dashboard
+            </a>
+
+            <a href="client-registration.html">
+                👤 Client Registration
+            </a>
+
+            <a href="kyc-verification.html">
+                💳 KYC Verification
+            </a>
+
+            <a href="documents.html">
+                📄 Documents
+            </a>
+
+            <a href="risk-assessment.html">
+                ⚠️ Risk Assessment
+            </a>
+
+            <a href="policy-recommendation.html" class="active">
+                📋 Policy Recommendation
+            </a>
+
+            <a href="client-listing.html">
+                👥 Client Listing
+            </a>
+
+            <a href="#">
+                📑 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h2>
+                    Client Onboarding Platform
+                </h2>
+
+                <p>
+                    Insurance & Finance
+                </p>
+
+            </div>
+
+            <div>
+                🔔 &nbsp; 👤 Admin
+            </div>
+
+        </header>
+
+
+        <section class="content-area">
+
+            <h1>
+                Policy Recommendation
+            </h1>
+
+            <p>
+                Recommend suitable insurance and financial policies
+            </p>
+
+
+            <div class="registration-card">
+
+                <h2>
+                    Policy Details
+                </h2>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Client Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="policyClientName"
+                            placeholder="Enter client name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Policy Type
+                        </label>
+
+                        <select id="policyType">
+
+                            <option value="">
+                                Select Policy
+                            </option>
+
+                            <option value="Health Insurance">
+                                Health Insurance
+                            </option>
+
+                            <option value="Life Insurance">
+                                Life Insurance
+                            </option>
+
+                            <option value="Term Insurance">
+                                Term Insurance
+                            </option>
+
+                            <option value="Motor Insurance">
+                                Motor Insurance
+                            </option>
+
+                            <option value="Investment Plan">
+                                Investment Plan
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Coverage Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="coverageAmount"
+                            placeholder="Enter coverage amount"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Estimated Premium
+                        </label>
+
+                        <input
+                            type="number"
+                            id="estimatedPremium"
+                            placeholder="Enter estimated premium"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="full-width">
+
+                    <div class="form-group">
+
+                        <label>
+                            Recommendation
+                        </label>
+
+                        <textarea
+                            id="policyRecommendation"
+                            rows="4"
+                            placeholder="Enter policy recommendation"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="full-width">
+
+                    <div class="form-group">
+
+                        <label>
+                            Remarks
+                        </label>
+
+                        <textarea
+                            id="policyRemarks"
+                            rows="4"
+                            placeholder="Enter additional remarks"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="location.reload()"
+                    >
+                        Clear
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="submit-btn"
+                        id="policyRecommendationBtn"
+                    >
+                        Save Recommendation
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+   <script src="../js/script.js"></script>
+
+</body>
+
+</html>
